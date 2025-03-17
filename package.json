@@ -1,0 +1,22 @@
+{
+  "name": "mcp-jira",
+  "version": "1.0.0",
+  "description": "Full-stack application with Vite frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@executeautomation/playwright-mcp-server": "^0.2.7",
+    "@playwright/test": "^1.50.1"
+  }
+}
